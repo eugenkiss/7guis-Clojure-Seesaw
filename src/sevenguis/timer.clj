@@ -9,8 +9,8 @@
 (defn processing [elapsed duration]
   (while true
     (when (< @elapsed @duration)
-	    (Thread/sleep 100)
-		  (swap! elapsed inc))
+      (Thread/sleep 100)
+      (swap! elapsed inc))
     (Thread/sleep 1)))
 
 (defn timer-panel []
@@ -41,7 +41,4 @@
               reset])))
 
 (defn -main [& args] 
-  (invoke-later
-    (-> (frame :title "Timer" :content (timer-panel) :on-close :exit) 
-      pack!
-      show!)))
+  (display "Timer" timer-panel))

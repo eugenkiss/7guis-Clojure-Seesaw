@@ -1,4 +1,4 @@
-(ns seveguis.temperature
+(ns sevenguis.temperature
   (:use [seesaw core]
         sevenguis.core)
   (:require [seesaw.bind :as b]))
@@ -36,4 +36,4 @@
       :items [celsius "Celsius" "=" fahrenheit "Fahrenheit"])))
 
 (defn -main [& args] 
-  (invoke-later    (-> (frame :title "Temperature Converter" :content (convert-panel) :on-close :exit)      pack!     show!)))
+  (display "Temperature Converter" convert-panel))
