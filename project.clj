@@ -6,7 +6,10 @@
   :repl-options { :init (do
                           (use 'clojure.repl)
                           (use 'seesaw.dev))}
-  :dependencies [[org.clojure/clojure "1.5.1"]
-                 [seesaw "1.4.4"]                 
-                 [instaparse "1.3.1"]
-                 ])
+  :dependencies [[org.clojure/clojure "1.10.3"]
+                 [seesaw "1.5.0"]
+                 [instaparse "1.4.10"]
+                 [com.formdev/flatlaf "0.37"]]) ;; swing support for big displays])
+
+
+
